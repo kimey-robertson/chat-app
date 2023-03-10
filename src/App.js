@@ -66,10 +66,7 @@ const styles = {
 }
 
 function App() {
-  const [messages, setMessages] = useState([
-    'Hey how\'s it going',
-    'Good hbu'
-  ]);
+  const [messages, setMessages] = useState([]);
 
   const [userInput, setUserInput] = useState('');
 
