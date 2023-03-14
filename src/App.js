@@ -31,39 +31,6 @@ const database = getDatabase(app);
 
 const messagesDiv = document.getElementById('messagesList')
 
-const styles = {
-  chatbox: {
-    height: '600px',
-    width: '1024px',
-    background: 'white',
-    borderRadius: '20px',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-between'
-  },
-  textInput: {
-    height: 50,
-    fontSize: 24,
-    paddingLeft: 30,
-    width: '100%'
-  },
-  messageListWrapper: {
-    overflow: 'scroll', 
-    height: '525px',
-    paddingBottom: '10px'
-  },
-  messageList: {
-    listStyle: 'none',
-    textAlign: 'left',
-  },
-  message: {
-    paddingTop: 10
-  },
-  inputForm: {
-    overflow: 'hidden',
-    height: 55
-  }
-}
 
 function App() {
   const [messages, setMessages] = useState([]);
@@ -100,20 +67,20 @@ function App() {
   return (
  <div className="App">
       <header className="App-header">
-        <div style={styles.chatbox}>
-          <div id="messagesList" style={styles.messageListWrapper}>  
-            <ul style={styles.messageList}>
+        <div className='chatbox' >
+          <div id="messagesList" className='messageListWrapper'>  
+            <ul className='messageList'>
 
               { messages.map(message => 
-                <li style={styles.message}>{message}</li>
+                <li className='message' >{message}</li>
               )}
              
             </ul>
           </div>
-          <form style={styles.inputForm} onSubmit={handleUserInput}>
+          <form className='inputForm' onSubmit={handleUserInput}>
             <input value={userInput} 
                    onChange={event => setUserInput(event.target.value)} 
-                   style={styles.textInput} 
+                   className='textInput'
                    type="text" 
                    placeholder='Hi!'/>
           </form>

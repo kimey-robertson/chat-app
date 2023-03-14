@@ -35,3 +35,42 @@
     transform: rotate(360deg);
   }
 }
+
+.chatbox {
+  max-height: 600px;
+  max-width: 1024px;
+  width: 80%;
+  height: 80vh;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.messageListWrapper {
+  overflow: scroll; 
+  height: 525px;
+  padding-bottom: 10px;
+}
+
+.textInput {
+  height: 50px;
+  font-size: 24px;
+  padding-left: 30px;
+  width: 100%;
+}
+
+.messageList {
+  list-style: none;
+  text-align: left;
+}
+
+.message {
+  padding-top: 10;
+}
+
+.inputForm {
+  overflow: hidden;
+  height: 55;
+}
