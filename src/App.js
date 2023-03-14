@@ -83,6 +83,7 @@ function App() {
                    className='textInput'
                    type="text" 
                    placeholder='Hi!'/>
+            <button>Submit</button>
           </form>
         </div>
       </header>

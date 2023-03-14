@@ -59,6 +59,7 @@
   font-size: 24px;
   padding-left: 30px;
   width: 100%;
+  border: none;
 }
 
 .messageList {
@@ -67,16 +68,38 @@
 }
 
 .message {
-  padding-top: 10;
+  padding-top: 10px;
 }
 
 .inputForm {
   overflow: hidden;
-  height: 55;
+  height: 55px;
+  display: flex;
+  border: 1px solid grey;
+}
+
+.inputForm button {
+  width: 10%;
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  color: rgb(82, 82, 82);
 }
 
 @media (max-width: 600px) {
   .messageList {
     padding-left: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .inputForm button {
+    width: 20%;
+  }
+}
+
+@media (max-width: 500px) {
+  .inputForm button {
+    width: 25%;
   }
 }
