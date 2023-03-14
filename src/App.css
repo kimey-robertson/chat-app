@@ -74,3 +74,9 @@
   overflow: hidden;
   height: 55;
 }
+
+@media (max-width: 600px) {
+  .messageList {
+    padding-left: 20px;
+  }
+}
